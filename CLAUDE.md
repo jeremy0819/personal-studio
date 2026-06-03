@@ -165,12 +165,16 @@
 
 - 「導入 AI 坪效分析工具（RE-DCF-Tool），將都更／危老前期評估自動化，
    通過安和／龜山／中正三案驗證，計算時間從數天縮短至即時。」
+- 「將個人 AI 工作環境（跨 session 記憶＋調度 skill＋四部門 agent）整理為
+   結構化、可攜帶的 Claude Code 專案，獨立版控並備份至 GitHub
+   （github.com/jeremy0819/personal-studio），解決原本未備份與目錄結構錯誤無法運作的問題。」
 
 ---
 
 ## 10. 下一步行動
 
-1. ✅ RE-DCF-Tool v3.1 本機完成 → 待 push 到 GitHub
-2. 📌 安裝 Claude Desktop（Tier 1 起點）
-3. 📌 規劃「地主說明書自動生成」（文件部第一個落地案例）
-4. 📌 研究 baoyu-translate skill 安裝方式
+1. ✅ RE-DCF-Tool v3.1 本機完成 → 已 push 到 GitHub
+2. ✅ personal-studio 已獨立版控並備份至 GitHub（jeremy0819/personal-studio）
+3. 📌 安裝 Claude Desktop（Tier 1 起點）
+4. 📌 規劃「地主說明書自動生成」（文件部第一個落地案例）
+5. 📌 研究 baoyu-translate skill 安裝方式
