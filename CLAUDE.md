@@ -11,7 +11,7 @@
 
 - 這份 `CLAUDE.md`（工作室憲法 / 跨 session 記憶）
 - `.claude/skills/personal-studio/`（調度大腦）
-- `.claude/agents/*.md`（目前已招募的員工：mentor、auditor、evaluation-analyst、document-specialist）
+- `.claude/agents/*.md`（目前已招募的員工：mentor、auditor、evaluation-analyst、document-specialist、english-tutor）
 - `WORKFLOW.md`（建造順序與查核迴圈）
 
 開新 session 後，我會說「**啟動工作室**」或直接丟任務，調度 skill 會接手分流。
@@ -54,8 +54,17 @@
 | 週報整理員 | Claude | 語音／文字輸入轉結構化報告 |
 | 建照查核員 | Claude | 送件前對照法規清單自我檢查 |
 
-### 🌐 翻譯部（留位，用到再招募）
-> 參考 baoyu-translate 四段式流程。目前用 skill 直接處理，尚無專屬 agent。
+### 🗣 語言學習部（🔜 規劃中，agent 已建立）
+> 主理人個人英文能力提升，聚焦不動產／都更業務場景。對應 agent：`english-tutor`。
+> 學習計畫詳見 `english-learning-plan.md`。
+
+| 員工 | 工具/Skill | 負責工作 |
+|---|---|---|
+| 英文家教 | `english-tutor` agent（✅ 已建立） | 情境對話模擬、文法糾正、詞彙學習 |
+| 技術翻譯 | baoyu-translate skill（待安裝） | 外文建築規範、合約輔助翻譯 |
+
+### 🌐 翻譯部（與語言學習部合流，留位）
+> 技術文件翻譯需求由 baoyu-translate skill 處理，目前待安裝。
 
 | 員工 | 工具/Skill | 負責工作 |
 |---|---|---|
@@ -175,6 +184,8 @@
 
 1. ✅ RE-DCF-Tool v3.1 本機完成 → 已 push 到 GitHub
 2. ✅ personal-studio 已獨立版控並備份至 GitHub（jeremy0819/personal-studio）
-3. 📌 安裝 Claude Desktop（Tier 1 起點）
-4. 📌 規劃「地主說明書自動生成」（文件部第一個落地案例）
-5. 📌 研究 baoyu-translate skill 安裝方式
+3. ✅ 語言學習部規劃完成 → `english-tutor` agent 建立、`english-learning-plan.md` 建立
+4. 📌 安裝 Claude Desktop（Tier 1 起點）
+5. 📌 規劃「地主說明書自動生成」（文件部第一個落地案例）
+6. 📌 研究 baoyu-translate skill 安裝方式
+7. 📌 開始英文學習 Phase 1（從 S6 自我介紹情境開始）
