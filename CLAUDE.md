@@ -11,7 +11,7 @@
 
 - 這份 `CLAUDE.md`（工作室憲法 / 跨 session 記憶）
 - `.claude/skills/personal-studio/`（調度大腦）
-- `.claude/agents/*.md`（目前已招募的員工：mentor、auditor、evaluation-analyst、document-specialist）
+- `.claude/agents/*.md`（目前已招募的員工：mentor、auditor、evaluation-analyst、document-specialist、texas-holdem-master）
 - `WORKFLOW.md`（建造順序與查核迴圈）
 
 開新 session 後，我會說「**啟動工作室**」或直接丟任務，調度 skill 會接手分流。
@@ -120,6 +120,13 @@
 - https://github.com/jeremy0819/jieceng-web
 - **Nuxt 3 / Vue**，傑丞建設公司官網。
 
+### texas-holdem-trainer（個人學習專案，非建築業務）
+- 德州撲克學習模擬器。對應 agent：`texas-holdem-master`。
+- **純前端 HTML/CSS/JS**（無框架、無 build），部署 GitHub Pages，手機開網址即可練習。
+- 四大功能：對戰（即時教練）、情境測驗、上一手檢討＋數據統計、學習參考。
+- 教練建議**完全用本機數學**（勝率 vs 底池賠率），不呼叫任何 LLM／外部 API。
+- 核心牌型評估器通過 21 項單元測試 ＋ 3000 手隨機壓力測試（籌碼守恆）。
+
 > ⚠️ 技術棧依專案而定（RE-DCF-Tool＝Streamlit／Python、jieceng-web＝Nuxt／Vue）。
 > **沒有「單一 HTML」這種統一慣例。** 工具一律由 Claude 建置與維護，我只負責操作。
 
@@ -168,6 +175,8 @@
 - 「將個人 AI 工作環境（跨 session 記憶＋調度 skill＋四部門 agent）整理為
    結構化、可攜帶的 Claude Code 專案，獨立版控並備份至 GitHub
    （github.com/jeremy0819/personal-studio），解決原本未備份與目錄結構錯誤無法運作的問題。」
+- 「以 Agent 輔助規劃並建置德州撲克學習模擬器（純前端＋本機數學教練引擎，零後端零費用），
+   牌型評估器通過 21 項單元測試與 3000 手隨機壓力測試，部署 GitHub Pages 供手機隨時練習。」
 
 ---
 
@@ -175,6 +184,8 @@
 
 1. ✅ RE-DCF-Tool v3.1 本機完成 → 已 push 到 GitHub
 2. ✅ personal-studio 已獨立版控並備份至 GitHub（jeremy0819/personal-studio）
-3. 📌 安裝 Claude Desktop（Tier 1 起點）
-4. 📌 規劃「地主說明書自動生成」（文件部第一個落地案例）
-5. 📌 研究 baoyu-translate skill 安裝方式
+3. ⚠️ **隱私待處理**：personal-studio repo 目前是 **public**，內含商業資訊（公司名／都更業務／財務工具）。建議到 GitHub Settings → Danger Zone 改為 **Private**。
+4. 📌 安裝 Claude Desktop（Tier 1 起點）
+5. 📌 規劃「地主說明書自動生成」（文件部第一個落地案例）
+6. 📌 研究 baoyu-translate skill 安裝方式
+7. 📌 德州撲克模擬器：建新 public repo（texas-holdem-trainer）並開 GitHub Pages
